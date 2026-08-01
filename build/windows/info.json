@@ -1,0 +1,15 @@
+{
+	"fixed": {
+		"file_version": "0.1.0"
+	},
+	"info": {
+		"0000": {
+			"ProductVersion": "0.1.0",
+			"CompanyName": "Otto",
+			"FileDescription": "A desktop agent execution node",
+			"LegalCopyright": "© 2026 Otto",
+			"ProductName": "Otto",
+			"Comments": "Go-first local agent desktop"
+		}
+	}
+}
