@@ -1,18 +1,48 @@
-.task
-bin
+# 操作系统与编辑器状态
 .DS_Store
 .idea/
 .vscode/
+*.swp
+*~
+
+# 本地配置与敏感信息
+.env
+.env.*
+!.env.example
+
+# 日志、覆盖率与本地缓存
 *.log
-frontend/dist
-frontend/node_modules
+*.tmp
+*.test
+*.out
+.cache/
+coverage/
+coverage.out
+
+# Task 与 Wails 构建产物
+.task/
+bin/
+
+# 前端依赖与生成产物
+frontend/.vite/
+frontend/coverage/
+frontend/dist/
+frontend/node_modules/
 !frontend/dist/
 frontend/dist/*
 !frontend/dist/.gitkeep
-build/linux/appimage/build
+
+# 各平台生成的构建状态
+build/darwin/Assets.car
+build/linux/appimage/build/
 build/windows/nsis/MicrosoftEdgeWebview2Setup.exe
-# Mobile generated (per-machine; overlays hold absolute paths)
+build/android/.gradle/
+build/android/app/build/
+build/android/local.properties
 build/ios/xcode/overlay.json
 build/ios/xcode/gen/
+build/ios/DerivedData/
+**/xcuserdata/
+*.xcuserstate
 build/android/overlay.json
 build/android/gen/
